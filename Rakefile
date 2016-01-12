@@ -4,3 +4,8 @@
 require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
+
+# Add Coverband tasks to rake tasks
+require 'coverband'
+Coverband.configure
+require 'coverband/tasks'

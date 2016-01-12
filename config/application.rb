@@ -22,5 +22,8 @@ module RailsCoverbandExampleApp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Add Coverband middleware to Rails stack of middlewares
+    config.middleware.use Coverband::Middleware
   end
 end

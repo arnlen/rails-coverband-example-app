@@ -8,6 +8,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 
+gem 'coverband', '~> 1.0' # Generate reports about codebase usage based on users' behaviours
+
 group :development, :test do
   gem 'spring'
 end
